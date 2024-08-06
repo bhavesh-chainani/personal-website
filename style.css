@@ -180,9 +180,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
     height: 85vh;
-    margin-bottom: 10rem; /* Adjusted margin */
+    gap: 20px;
 }
 
 .section_pic_container {
@@ -239,9 +239,8 @@ section {
 /* ABOUT SECTION */
 
 #about {
-    padding: 1rem 0; /* Reduced padding */
+    padding: 4rem 0;
     text-align: center;
-    margin-top: 1rem; /* Optional: Adjust margin-top if needed */
 }
 
 .title_2 {
