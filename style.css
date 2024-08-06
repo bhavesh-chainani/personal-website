@@ -270,6 +270,25 @@ section {
     text-align: left;
 }
 
+.text_container_skillsets {
+    margin: 2rem auto;
+    text-align: left; /* Align text to the left */
+}
+
+.text_container_skillsets ul {
+    padding-left: 2rem; /* Adds some padding to the left for better indentation */
+}
+
+.text_container_skillsets li {
+    margin-bottom: 0.5rem; /* Adds some space between list items */
+}
+
+.text_container_skillsets p {
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
 /* PROFICIENCIES SECTION */
 
 #proficiencies {
