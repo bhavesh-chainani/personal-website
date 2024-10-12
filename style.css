@@ -437,6 +437,15 @@ label {
     border-radius: 5px;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
+.section_text_p2 {
+    word-wrap: break-word;
+}
+
+
 textarea {
     resize: none;
 }
