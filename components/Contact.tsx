@@ -1,0 +1,96 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+import Image from 'next/image'
+import { Mail } from 'lucide-react'
+
+const Contact = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  return (
+    <section id="contact" className="section-padding bg-gray-50">
+      <div className="container-max">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 relative inline-block">
+            Contact Me
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
+          </h2>
+        </motion.div>
+
+        <div className="flex justify-center">
+          <div className="max-w-2xl">
+            {/* Contact Information */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-center space-y-8"
+            >
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                  Let's Connect
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+                  I'm always interested in discussing new opportunities, innovative projects, 
+                  or just having a conversation about data science and technology. Feel free to reach out!
+                </p>
+              </div>
+
+              {/* Contact Methods */}
+              <div className="space-y-8">
+                <div className="flex flex-col items-center space-y-3">
+                  <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center">
+                    <Mail className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Email</p>
+                    <a 
+                      href="mailto:hello@bhaveshc.com"
+                      className="text-xl font-medium text-gray-900 hover:text-primary-600 transition-colors duration-300"
+                    >
+                      hello@bhaveshc.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center space-y-3">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                    <Image
+                      src="/assets/linkedin.png"
+                      alt="LinkedIn"
+                      width={32}
+                      height={32}
+                      className="w-8 h-8"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">LinkedIn</p>
+                    <a 
+                      href="https://www.linkedin.com/in/bhaveshchainani"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl font-medium text-gray-900 hover:text-primary-600 transition-colors duration-300"
+                    >
+                      bhaveshchainani
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Contact
