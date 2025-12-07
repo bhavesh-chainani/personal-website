@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 text-white section-padding">
+    <footer className="bg-gray-900 text-white py-4">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,15 +15,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold mb-4">Bhavesh Chainani</h3>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Data Scientist passionate about transforming complex data into actionable insights 
-              and building innovative solutions that drive business growth.
-            </p>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8">
+          <div className="border-gray-800 pt-2">
             <p className="text-gray-400">
               Copyright © {currentYear} Bhavesh Chainani. All Rights Reserved.
             </p>

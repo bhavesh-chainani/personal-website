@@ -25,9 +25,9 @@ const Hero = () => {
             <Image
               src="/assets/profile.png"
               alt="Bhavesh Chainani Profile Picture"
-              width={300}
-              height={375}
-              className="w-auto h-auto max-w-xs lg:max-w-sm object-contain"
+              width={475}
+              height={475}
+              className="h-[300px] w-auto object-contain"
               priority
             />
           </motion.div>

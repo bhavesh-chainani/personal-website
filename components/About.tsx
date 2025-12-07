@@ -33,12 +33,12 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
-            <p className="text-lg leading-relaxed text-gray-700 text-justify lg:text-center">
+            <p className="text-lg leading-relaxed text-gray-700 text-justify lg:text-center font-light">
               Data Scientist with 4+ years of professional experience in data science and analytics, 
               adept at leveraging advanced analytical techniques and state-of-the-art technologies to 
-              drive business growth and enhance operational efficiency. Skilled in translating complex 
-              data into actionable insights for multiple stakeholders and leading end-to-end projects 
-              that deliver impactful solutions.
+              drive business growth and enhance operational efficiency.<br /> <br />
+              Skilled in translating complex  data into actionable insights for multiple stakeholders and 
+              leading end-to-end projects that deliver impactful solutions.
             </p>
           </motion.div>
         </motion.div>

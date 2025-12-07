@@ -126,7 +126,7 @@ const Proficiencies = () => {
                 {card.title}
               </h3>
               
-              <p className="text-gray-600 leading-7 text-left flex-grow">
+              <p className="text-gray-600 leading-7 text-left flex-grow font-light">
                 {card.description}
               </p>
             </motion.div>

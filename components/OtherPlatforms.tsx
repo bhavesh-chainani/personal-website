@@ -76,7 +76,7 @@ const OtherPlatforms = () => {
                       {platform.name}
                     </h3>
                     
-                    <p className="text-gray-600 mb-6 text-lg">
+                    <p className="text-gray-600 mb-6 text-lg font-light">
                       {platform.description}
                     </p>
 

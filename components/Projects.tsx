@@ -80,7 +80,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-7 mb-6 text-left flex-grow">
+                <p className="text-gray-600 leading-7 mb-6 text-left flex-grow font-light">
                   {project.description}
                 </p>
 

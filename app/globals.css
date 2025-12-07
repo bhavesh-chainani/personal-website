@@ -20,7 +20,13 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-primary-600 to-secondary-500;
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+  }
+  
+  .gradient-bg:hover {
+    background-position: right center;
   }
   
   .card-hover {
@@ -32,6 +38,6 @@
   }
   
   .container-max {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-[1600px] mx-auto;
   }
 }
