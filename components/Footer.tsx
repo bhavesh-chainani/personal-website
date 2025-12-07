@@ -15,7 +15,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="border-t border-gray-800 pt-4">
+          <div>
             <p className="text-gray-400">
               Copyright © {currentYear} Bhavesh Chainani. All Rights Reserved.
             </p>
