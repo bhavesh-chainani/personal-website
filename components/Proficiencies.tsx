@@ -86,18 +86,27 @@ const Proficiencies = () => {
         >
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-              {skills.map((skill, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  className="flex items-start space-x-3"
-                >
-                  <div className="w-2 h-2 gradient-bg rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700 leading-relaxed">{skill}</span>
-                </motion.li>
-              ))}
+              {skills.map((skill, index) => {
+                const bracketIndex = skill.indexOf('(');
+                const mainText = bracketIndex !== -1 ? skill.substring(0, bracketIndex).trim() : skill;
+                const bracketText = bracketIndex !== -1 ? skill.substring(bracketIndex) : '';
+                
+                return (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                    transition={{ duration: 0.4, delay: 0.1 * index }}
+                    className="flex items-start space-x-3"
+                  >
+                    <div className="w-2 h-2 gradient-bg rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="leading-relaxed">
+                      <span className="skill-main" style={{ fontWeight: 700 }}>{mainText}</span>
+                      {bracketText && <><span className="skill-bracket" style={{ fontWeight: 450 }}> {bracketText}</span></>}
+                    </span>
+                  </motion.li>
+                );
+              })}
             </ul>
           </div>
         </motion.div>
@@ -126,7 +135,7 @@ const Proficiencies = () => {
                 {card.title}
               </h3>
               
-              <p className="text-gray-600 leading-7 text-left flex-grow font-light">
+              <p className="text-gray-500 leading-7 text-center flex-grow description-text" style={{ fontWeight: 450 }}>
                 {card.description}
               </p>
             </motion.div>

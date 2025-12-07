@@ -18,7 +18,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-8"
+          className="text-center mb-6"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-0 relative inline-block">
             Contact Me
@@ -45,7 +45,7 @@ const Contact = () => {
                     {/* <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">Email</p> */}
                     <a 
                       href="mailto:hello@bhaveshc.com"
-                      className="text-xl font-medium text-gray-900 hover:text-primary-600 transition-colors duration-300"
+                      className="text-lg font-medium text-gray-900 hover:text-primary-600 transition-all duration-300 inline-block hover:scale-110"
                     >
                       hello@bhaveshc.com
                     </a>
@@ -53,15 +53,20 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col items-center space-y-2">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center">
+                  <a 
+                    href="https://www.linkedin.com/in/bhaveshchainani"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-16 h-16 rounded-full flex items-center justify-center cursor-pointer group"
+                  >
                     <Image
                       src="/assets/linkedin.png"
                       alt="LinkedIn"
                       width={32}
                       height={32}
-                      className="w-8 h-8"
+                      className="w-8 h-8 group-hover:scale-[1.3] transition-transform duration-300"
                     />
-                  </div>
+                  </a>
                   <div className="text-center">
                     {/* <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">LinkedIn</p> */}
                     <a 

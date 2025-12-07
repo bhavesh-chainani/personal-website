@@ -14,7 +14,7 @@ const Projects = () => {
     {
       image: "/assets/data-streaming-architecture.png",
       title: "Realtime Data Streaming",
-      description: "This project showcases an end-to-end real-time data streaming pipeline using technologies like Apache Airflow, Kafka, Spark, and Cassandra. Synthetic user data is fetched from the randomuser.me API, orchestrated via Airflow, streamed through Kafka, processed with Spark, and stored in Cassandra—all containerized with Docker for seamless deployment.",
+      description: "This project showcases an end-to-end real-time data streaming pipeline using technologies like Apache Airflow, Kafka, Spark, and Cassandra. Synthetic user data is fetched from the randomuser.me API, orchestrated via Airflow, streamed through Kafka, processed with Spark, and stored in Cassandra, all containerized with Docker for seamless deployment.",
       githubUrl: "https://github.com/bhavesh-chainani/realtime-data-streaming",
       technologies: ["Apache Airflow", "Kafka", "Spark", "Cassandra", "Docker"]
     },
@@ -80,7 +80,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-7 mb-6 text-left flex-grow font-light">
+                <p className="text-gray-500 leading-7 mb-6 text-left flex-grow description-text" style={{ fontWeight: 450 }}>
                   {project.description}
                 </p>
 

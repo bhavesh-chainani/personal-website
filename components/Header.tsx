@@ -43,9 +43,9 @@ const Header = () => {
             <Image
               src="/assets/bhav-logo.png"
               alt="Bhavesh Chainani"
-              width={50}
-              height={50}
-              className="max-w-[35px] md:max-w-[50px] object-contain"
+              width={80}
+              height={80}
+              className="max-w-[50px] md:max-w-[70px] object-contain"
             />
           </div>
 

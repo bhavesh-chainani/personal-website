@@ -12,7 +12,6 @@ const OtherPlatforms = () => {
 
   const platforms = [
     {
-      name: "GitHub",
       description: "All things code",
       image: "/assets/github.png",
       url: "https://github.com/bhavesh-chainani",
@@ -60,7 +59,7 @@ const OtherPlatforms = () => {
                   <div className={`absolute inset-0 bg-gradient-to-br ${platform.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
                   
                   {/* Platform Image */}
-                  <div className="relative z-10 mb-8">
+                  <div className="relative z-10 mb-6">
                     <Image
                       src={platform.image}
                       alt={`${platform.name} Icon`}
@@ -76,7 +75,7 @@ const OtherPlatforms = () => {
                       {platform.name}
                     </h3>
                     
-                    <p className="text-gray-600 mb-6 text-lg font-light">
+                    <p className="text-gray-500 mb-6 text-lg description-text" style={{ fontWeight: 450 }}>
                       {platform.description}
                     </p>
 

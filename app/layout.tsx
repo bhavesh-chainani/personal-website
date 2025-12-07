@@ -4,12 +4,12 @@ import './globals.css'
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
   variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
-  title: 'Bhavesh Chainani - Data Scientist & Tech Consultant',
+  title: 'Bhavesh Chainani',
   description: 'Data Scientist with 4+ years of professional experience in data science and analytics, adept at leveraging advanced analytical techniques and state-of-the-art technologies.',
   keywords: 'Data Scientist, Tech Consultant, Python, Machine Learning, AWS, Data Analytics',
   authors: [{ name: 'Bhavesh Chainani' }],
