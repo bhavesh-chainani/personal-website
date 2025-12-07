@@ -11,17 +11,17 @@ const Proficiencies = () => {
 
   const skills = [
     "Python (PyTorch, Keras, TensorFlow, Scikit-Learn, Django, Flask, PySpark)",
-    "MLOps (MLFlow, DataRobot)",
-    "AWS (S3, Athena, Glue, SageMaker, Quicksight, Redshift, MWAA, Lambda, API Gateway)",
-    "SQL (MySQL, PostgreSQL, Hive, ElasticSearch, Teradata, Hadoop, MongoDB)",
-    "Data Visualisation (Tableau, Power BI)",
-    "Docker",
-    "Kubernetes",
+    "MLOps (MLflow, DataRobot)",
+    "AWS (S3, Glue, SageMaker, QuickSight, Redshift, MWAA, Lambda, API Gateway)",
+    "Azure (Azure ML, Azure OpenAI, Cognitive Search, Blob Storage, App Services)",
+    "Databases & Data Platforms (MySQL, PostgreSQL, Hive, Elasticsearch, Teradata, Hadoop, MongoDB)",
+    "Data Visualization (Tableau, Power BI)",
+    "Containerization & Orchestration (Docker, Kubernetes)",
     "Java",
-    "JavaScript (ReactJS, NodeJS, NextJS)",
-    "Rest API",
-    "R / R Studio",
-    "MATLab"
+    "JavaScript (React, Node.js, Next.js)",
+    "REST APIs",
+    "R (RStudio)",
+    "MATLAB"
   ]
 
   const proficiencyCards = [
