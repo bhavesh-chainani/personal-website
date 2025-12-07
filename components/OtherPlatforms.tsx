@@ -62,7 +62,7 @@ const OtherPlatforms = () => {
                   <div className="relative z-10 mb-6">
                     <Image
                       src={platform.image}
-                      alt={`${platform.name} Icon`}
+                      alt="GitHub Icon"
                       width={192}
                       height={192}
                       className="mx-auto w-40 h-40 lg:w-48 lg:h-48 object-contain group-hover:scale-110 transition-transform duration-300"
@@ -72,7 +72,6 @@ const OtherPlatforms = () => {
                   {/* Platform Info */}
                   <div className="relative z-10">
                     <h3 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
-                      {platform.name}
                     </h3>
                     
                     <p className="text-gray-500 mb-6 text-lg description-text" style={{ fontWeight: 450 }}>
