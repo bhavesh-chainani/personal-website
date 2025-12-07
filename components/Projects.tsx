@@ -48,7 +48,7 @@ const Projects = () => {
             Browse Through My
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-normal text-gray-900 mb-12 relative inline-block">
             Projects
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
@@ -76,7 +76,7 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-normal text-gray-900 mb-4">
                   {project.title}
                 </h3>
                 

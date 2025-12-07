@@ -20,7 +20,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-6"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-0 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-normal text-gray-900 mb-0 relative inline-block">
             Contact Me
             <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>

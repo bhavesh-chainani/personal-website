@@ -55,7 +55,7 @@ const Header = () => {
               <li key={item.href}>
                 <button
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-[1.3rem] relative group"
+                  className="text-gray-700 hover:text-primary-600 transition-colors duration-300 font-bold text-[1.1rem] relative group"
                 >
                   {item.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 gradient-bg transition-all duration-300 group-hover:w-full"></span>
@@ -86,7 +86,7 @@ const Header = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left py-3 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-[0.9rem]"
+                className="block w-full text-left py-3 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-light text-[0.9rem]"
               >
                 {item.label}
               </button>

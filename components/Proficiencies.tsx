@@ -71,7 +71,7 @@ const Proficiencies = () => {
             Here Are My
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-normal text-gray-900 mb-12 relative inline-block">
             Proficiencies
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
@@ -131,7 +131,7 @@ const Proficiencies = () => {
                 />
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">
+              <h3 className="text-xl font-normal text-gray-900 mb-6">
                 {card.title}
               </h3>
               

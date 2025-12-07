@@ -52,7 +52,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-relaxed"
+              className="text-4xl lg:text-4xl font-normal text-gray-900 mb-6 leading-relaxed"
             >
               Bhavesh Chainani
             </motion.h1>
@@ -61,7 +61,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-xl lg:text-2xl font-medium mb-6 leading-relaxed text-gray-700"
+              className="text-xl lg:text-xl font-medium mb-6 leading-relaxed text-gray-700"
             >
               Data Scientist | Aspiring Tech Consultant
             </motion.p>
