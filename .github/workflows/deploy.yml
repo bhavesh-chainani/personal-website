@@ -34,6 +34,11 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: Copy CNAME and .nojekyll
+        run: |
+          cp public/CNAME out/CNAME 2>/dev/null || true
+          touch out/.nojekyll
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
