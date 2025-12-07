@@ -80,11 +80,11 @@ const OtherPlatforms = () => {
                       {platform.description}
                     </p>
 
-                    {/* External Link Icon */}
+                    {/* External Link Icon
                     <div className="inline-flex items-center text-primary-600 font-medium group-hover:text-primary-700 transition-colors duration-300 text-lg">
                       <span className="mr-2">Visit Platform</span>
                       <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
+                    </div> */}
                   </div>
                 </a>
               </motion.div>
