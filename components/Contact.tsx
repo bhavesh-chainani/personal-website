@@ -60,7 +60,7 @@ const Contact = () => {
                     className="w-16 h-16 rounded-full flex items-center justify-center cursor-pointer group"
                   >
                     <Image
-                      src="/assets/linkedin.png"
+                      src="/assets/linkedin_logo.png"
                       alt="LinkedIn"
                       width={32}
                       height={32}
