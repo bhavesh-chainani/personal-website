@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-700 bg-white;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+  }
+  
+  .gradient-bg:hover {
+    background-position: right center;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-[1600px] mx-auto;
+  }
+  
+  .description-text {
+    font-weight: 450 !important;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
+  }
+  
+  .skill-main {
+    font-weight: 700 !important;
+    color: #111827;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
+  }
+  
+  .skill-bracket {
+    font-weight: 450 !important;
+    color: #4b5563;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
+  }
+}
