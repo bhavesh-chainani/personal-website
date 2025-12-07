@@ -33,7 +33,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
-            <p className="text-base leading-relaxed text-gray-500 text-justify lg:text-center description-text" style={{ fontWeight: 450 }}>
+            <p className="text-base text-gray-500 text-justify lg:text-center description-text" style={{ fontWeight: 450 }}>
             Data Scientist with 5+ years of experience driving business performance and operational efficiency through advanced analytics and modern technologies. 
             <br /><br />I lead end-to-end data initiatives and turn complex data into actionable insights that drive measurable results.
             </p>
