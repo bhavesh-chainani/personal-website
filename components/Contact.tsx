@@ -11,7 +11,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="contact" className="section-padding bg-gray-0">
+    <section id="contact" className="section-padding bg-white">
       <div className="container-max">
         <motion.div
           ref={ref}

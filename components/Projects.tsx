@@ -35,7 +35,7 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="section-padding bg-gray-50">
+    <section id="projects" className="section-padding bg-white">
       <div className="container-max">
         <motion.div
           ref={ref}

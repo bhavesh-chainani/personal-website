@@ -58,7 +58,7 @@ const Header = () => {
                   className="text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-[1.3rem] relative group"
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-600 to-secondary-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 gradient-bg transition-all duration-300 group-hover:w-full"></span>
                 </button>
               </li>
             ))}

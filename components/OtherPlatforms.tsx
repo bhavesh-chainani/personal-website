@@ -20,7 +20,7 @@ const OtherPlatforms = () => {
   ]
 
   return (
-    <section id="other-platforms" className="section-padding">
+    <section id="other-platforms" className="section-padding bg-white">
       <div className="container-max">
         <motion.div
           ref={ref}
