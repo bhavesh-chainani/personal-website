@@ -64,9 +64,9 @@ const OtherPlatforms = () => {
                     <Image
                       src={platform.image}
                       alt={`${platform.name} Icon`}
-                      width={120}
-                      height={120}
-                      className="mx-auto w-28 h-28 lg:w-32 lg:h-32 object-contain group-hover:scale-110 transition-transform duration-300"
+                      width={192}
+                      height={192}
+                      className="mx-auto w-40 h-40 lg:w-48 lg:h-48 object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                   

@@ -43,9 +43,9 @@ const Header = () => {
             <Image
               src="/assets/bhav-logo.png"
               alt="Bhavesh Chainani"
-              width={50}
-              height={50}
-              className="w-12 h-12 object-contain"
+              width={80}
+              height={80}
+              className="w-16 h-16 lg:w-20 lg:h-20 object-contain"
             />
           </div>
 
@@ -55,7 +55,7 @@ const Header = () => {
               <li key={item.href}>
                 <button
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-lg relative group"
+                  className="text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-2xl relative group"
                 >
                   {item.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-600 to-secondary-500 transition-all duration-300 group-hover:w-full"></span>
@@ -86,7 +86,7 @@ const Header = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left py-3 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium"
+                className="block w-full text-left py-3 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-xl"
               >
                 {item.label}
               </button>

@@ -22,19 +22,14 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="relative flex-shrink-0"
           >
-            <div className="w-72 h-80 lg:w-80 lg:h-96 relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-secondary-500 blur-2xl opacity-20 animate-pulse" style={{borderRadius: '50%'}}></div>
-              <div className="relative z-10 w-full h-full bg-white shadow-2xl overflow-hidden flex items-center justify-center" style={{borderRadius: '50%'}}>
-                <Image
-                  src="/assets/profile.png"
-                  alt="Bhavesh Chainani Profile Picture"
-                  width={320}
-                  height={400}
-                  className="w-full h-full object-cover"
-                  priority
-                />
-              </div>
-            </div>
+            <Image
+              src="/assets/profile.png"
+              alt="Bhavesh Chainani Profile Picture"
+              width={300}
+              height={375}
+              className="w-auto h-auto max-w-xs lg:max-w-sm object-contain"
+              priority
+            />
           </motion.div>
 
           {/* Hero Text */}
@@ -66,11 +61,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-xl lg:text-2xl font-medium mb-10 leading-relaxed"
+              className="text-xl lg:text-2xl font-medium mb-10 leading-relaxed text-gray-700"
             >
-              <span className="gradient-text">Data Scientist</span>
-              <span className="text-gray-600"> | </span>
-              <span className="gradient-text">Aspiring Tech Consultant</span>
+              Data Scientist | Aspiring Tech Consultant
             </motion.p>
             
             <motion.div
