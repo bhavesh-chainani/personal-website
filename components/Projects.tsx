@@ -12,18 +12,18 @@ const Projects = () => {
 
   const projects = [
     {
+      image: "/assets/realttime-conversation.png",
+      title: "Real-Time Conversation Intelligence",
+      description: "A real-time legal call assistant system that provides live AI-powered suggestions to operators during active calls with clients. Built with FastAPI backend and Next.js frontend, featuring real-time speech-to-text transcription via AssemblyAI and intelligent suggestions powered by OpenAI for legal assistance workflow.",
+      githubUrl: "https://github.com/bhavesh-chainani/realtime-conversation-intelligence",
+      technologies: ["FastAPI", "Next.js", "AssemblyAI", "OpenAI", "WebSocket"]
+    },
+    {
       image: "/assets/data-streaming-architecture.png",
-      title: "Realtime Data Streaming",
+      title: "Real-Time Data Pipeline",
       description: "This project showcases an end-to-end real-time data streaming pipeline using technologies like Apache Airflow, Kafka, Spark, and Cassandra. Synthetic user data is fetched from the randomuser.me API, orchestrated via Airflow, streamed through Kafka, processed with Spark, and stored in Cassandra, all containerized with Docker for seamless deployment.",
       githubUrl: "https://github.com/bhavesh-chainani/realtime-data-streaming",
       technologies: ["Apache Airflow", "Kafka", "Spark", "Cassandra", "Docker"]
-    },
-    {
-      image: "/assets/langchain_photo.png",
-      title: "LangChain Analysis",
-      description: "This project demonstrates the use of LangChain to develop and implement language models for various tasks such as text generation, summarization, and chatbots. A practical example includes creating a sample restaurant menu where LangChain interacts with user queries based on cuisine preferences, generating relevant menu items to showcase its capabilities in understanding and responding to user needs.",
-      githubUrl: "https://github.com/bhavesh-chainani/langchain_analysis",
-      technologies: ["LangChain", "Python", "NLP", "AI/ML"]
     },
     {
       image: "/assets/topic-modelling.png",
@@ -31,6 +31,13 @@ const Projects = () => {
       description: "A comprehensive topic modeling analysis for English, Russian, and Italian texts using Latent Dirichlet Allocation (LDA). This project involves preprocessing multilingual datasets, implementing LDA to uncover hidden topics, and analyzing the results to provide insights into the prevalent themes across different languages.",
       githubUrl: "https://github.com/bhavesh-chainani/topic_modelling",
       technologies: ["Python", "LDA", "NLP", "Scikit-Learn"]
+    },
+    {
+      image: "/assets/langchain_photo.png",
+      title: "LangChain Analysis",
+      description: "This project demonstrates the use of LangChain to develop and implement language models for various tasks such as text generation, summarization, and chatbots. A practical example includes creating a sample restaurant menu where LangChain interacts with user queries based on cuisine preferences, generating relevant menu items to showcase its capabilities in understanding and responding to user needs.",
+      githubUrl: "https://github.com/bhavesh-chainani/langchain_analysis",
+      technologies: ["LangChain", "Python", "NLP", "AI/ML"]
     }
   ]
 
@@ -54,7 +61,7 @@ const Projects = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
