@@ -16,7 +16,7 @@ const Footer = () => {
           className="text-center"
         >
           <div>
-            <p className="text-gray-400">
+            <p className="text-gray-400 font-semibold">
               Copyright © {currentYear} Bhavesh Chainani. All Rights Reserved.
             </p>
           </div>
