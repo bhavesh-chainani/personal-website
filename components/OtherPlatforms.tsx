@@ -29,11 +29,11 @@ const OtherPlatforms = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-lg font-medium text-gray-600 mb-4">
+          <p className="text-lg font-semibold text-gray-600 mb-4">
             Explore My
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-normal text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-12 relative inline-block">
             Other Platforms
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
@@ -71,7 +71,7 @@ const OtherPlatforms = () => {
                   
                   {/* Platform Info */}
                   <div className="relative z-10">
-                    <h3 className="text-2xl font-normal text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
                     </h3>
                     
                     <p className="text-gray-500 mb-6 text-lg description-text" style={{ fontWeight: 450 }}>
