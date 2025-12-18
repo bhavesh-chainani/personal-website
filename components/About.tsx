@@ -18,11 +18,11 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-lg font-medium text-gray-600 mb-4">
+          <p className="text-lg font-semibold text-gray-600 mb-4">
             Get To Know More
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-normal text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-12 relative inline-block">
             About Bhavesh Chainani
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>

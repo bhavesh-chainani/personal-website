@@ -86,7 +86,7 @@ const Header = () => {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left py-3 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-light text-[0.9rem]"
+                className="block w-full text-left py-3 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium text-[0.9rem]"
               >
                 {item.label}
               </button>
