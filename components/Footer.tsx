@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 text-white py-4">
+    <footer className="bg-gray-900 dark:bg-black text-white py-4 border-t border-gray-800">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <div>
             <p className="text-gray-400 font-semibold">
-              Copyright © {currentYear} Bhavesh Chainani. All Rights Reserved.
+              Copyright &copy; {currentYear} Bhavesh Chainani. All Rights Reserved.
             </p>
           </div>
         </motion.div>
