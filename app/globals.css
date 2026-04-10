@@ -10,7 +10,7 @@
   }
   
   body {
-    @apply text-gray-700 bg-white;
+    @apply text-gray-700 bg-white dark:text-gray-300 dark:bg-gray-950;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -38,11 +38,11 @@
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+    @apply transition-all duration-300 hover:scale-[1.03] hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-primary-500/5;
   }
   
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    @apply py-20 px-4 sm:px-6 lg:px-8;
   }
   
   .container-max {
@@ -59,10 +59,18 @@
     color: #111827;
     font-family: var(--font-poppins), 'Poppins', sans-serif;
   }
+
+  .dark .skill-main {
+    color: #f3f4f6;
+  }
   
   .skill-bracket {
     font-weight: 450 !important;
     color: #4b5563;
     font-family: var(--font-poppins), 'Poppins', sans-serif;
+  }
+
+  .dark .skill-bracket {
+    color: #9ca3af;
   }
 }

@@ -42,7 +42,7 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="section-padding bg-white">
+    <section id="projects" className="section-padding bg-gray-50 dark:bg-gray-900/50">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -51,11 +51,11 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-lg font-semibold text-gray-600 mb-4">
+          <p className="text-lg font-semibold text-gray-600 dark:text-gray-400 mb-4">
             Browse Through My
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 dark:text-white mb-12 relative inline-block">
             Projects
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
@@ -68,7 +68,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.2 * index }}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-gray-100 flex flex-col h-full"
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-900/50 overflow-hidden card-hover border border-gray-100 dark:border-gray-800 flex flex-col h-full"
             >
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
@@ -83,11 +83,11 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-500 leading-7 mb-6 text-left flex-grow description-text" style={{ fontWeight: 450 }}>
+                <p className="text-gray-500 dark:text-gray-400 leading-7 mb-6 text-left flex-grow description-text" style={{ fontWeight: 450 }}>
                   {project.description}
                 </p>
 
@@ -96,14 +96,14 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 text-sm rounded-full font-semibold"
+                      className="px-3 py-1 bg-gradient-to-r from-primary-100 to-secondary-100 dark:from-primary-900/40 dark:to-secondary-900/40 text-primary-700 dark:text-primary-300 text-sm rounded-full font-semibold"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                {/* Action Button - Always at bottom */}
+                {/* Action Button */}
                 <div className="flex justify-center mt-auto">
                   <a
                     href={project.githubUrl}

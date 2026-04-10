@@ -9,7 +9,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-gray-50 dark:bg-gray-900/50">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -18,11 +18,11 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-lg font-semibold text-gray-600 mb-4">
+          <p className="text-lg font-semibold text-gray-600 dark:text-gray-400 mb-4">
             Get To Know More
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 dark:text-white mb-12 relative inline-block">
             About Bhavesh Chainani
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
@@ -33,7 +33,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
-            <p className="text-base text-gray-500 text-justify lg:text-center description-text" style={{ fontWeight: 450 }}>
+            <p className="text-base text-gray-500 dark:text-gray-400 text-justify lg:text-center description-text" style={{ fontWeight: 450 }}>
             Data Scientist with 5+ years of experience driving business performance and operational efficiency through advanced analytics and modern technologies. 
             <br /><br />I lead end-to-end data initiatives and turn complex data into actionable insights that drive measurable results.
             </p>

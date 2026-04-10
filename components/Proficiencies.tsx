@@ -58,7 +58,7 @@ const Proficiencies = () => {
   ]
 
   return (
-    <section id="proficiencies" className="section-padding bg-white">
+    <section id="proficiencies" className="section-padding bg-white dark:bg-gray-950">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -67,11 +67,11 @@ const Proficiencies = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-lg font-semibold text-gray-600 mb-4">
+          <p className="text-lg font-semibold text-gray-600 dark:text-gray-400 mb-4">
             Here Are My
           </p>
           
-          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-12 relative inline-block">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 dark:text-white mb-12 relative inline-block">
             Proficiencies
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
@@ -84,7 +84,7 @@ const Proficiencies = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-16"
         >
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 border border-gray-100 dark:border-gray-800">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
               {skills.map((skill, index) => {
                 const bracketIndex = skill.indexOf('(');
@@ -119,7 +119,7 @@ const Proficiencies = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="bg-white rounded-2xl shadow-lg p-8 text-center card-hover border border-gray-100 flex flex-col h-full"
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 text-center card-hover border border-gray-100 dark:border-gray-800 flex flex-col h-full"
             >
               <div className="mb-6">
                 <Image
@@ -131,11 +131,11 @@ const Proficiencies = () => {
                 />
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
                 {card.title}
               </h3>
               
-              <p className="text-gray-500 leading-7 text-center flex-grow description-text" style={{ fontWeight: 450 }}>
+              <p className="text-gray-500 dark:text-gray-400 leading-7 text-center flex-grow description-text" style={{ fontWeight: 450 }}>
                 {card.description}
               </p>
             </motion.div>
