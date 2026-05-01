@@ -12,9 +12,9 @@ const Projects = () => {
 
   const projects = [
     {
-      image: "/assets/realttime-conversation.png",
+      image: "/assets/realtime-conversation.png",
       title: "Real-Time Conversation Intelligence",
-      description: "A real-time legal call assistant system that provides live AI-powered suggestions to operators during active calls with clients. Built with FastAPI backend and Next.js frontend, featuring real-time speech-to-text transcription via AssemblyAI and intelligent suggestions powered by OpenAI for legal assistance workflow.",
+      description: "A real-time call assistant system that provides live AI-powered suggestions to operators during active calls with clients. Built with FastAPI backend and Next.js frontend, featuring real-time speech-to-text transcription via AssemblyAI and intelligent suggestions powered by OpenAI.",
       githubUrl: "https://github.com/bhavesh-chainani/realtime-conversation-intelligence",
       technologies: ["FastAPI", "Next.js", "AssemblyAI", "OpenAI", "WebSocket"]
     },
@@ -71,12 +71,13 @@ const Projects = () => {
               className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-900/50 overflow-hidden card-hover border border-gray-100 dark:border-gray-800 flex flex-col h-full"
             >
               {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 sm:h-60 overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-300 hover:scale-110"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-top transition-transform duration-300 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
