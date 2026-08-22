@@ -11,13 +11,13 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const projects = [
-    {
-      image: "/assets/realtime-conversation.png",
-      title: "Real-Time Conversation Intelligence",
-      description: "A real-time call assistant system that provides live AI-powered suggestions to operators during active calls with clients. Built with FastAPI backend and Next.js frontend, featuring real-time speech-to-text transcription via AssemblyAI and intelligent suggestions powered by OpenAI.",
-      githubUrl: "https://github.com/bhavesh-chainani/realtime-conversation-intelligence",
-      technologies: ["FastAPI", "Next.js", "AssemblyAI", "OpenAI", "WebSocket"]
-    },
+    // {
+    //   image: "/assets/realtime-conversation.png",
+    //   title: "Real-Time Conversation Intelligence",
+    //   description: "A real-time call assistant system that provides live AI-powered suggestions to operators during active calls with clients. Built with FastAPI backend and Next.js frontend, featuring real-time speech-to-text transcription via AssemblyAI and intelligent suggestions powered by OpenAI.",
+    //   githubUrl: "https://github.com/bhavesh-chainani/realtime-conversation-intelligence",
+    //   technologies: ["FastAPI", "Next.js", "AssemblyAI", "OpenAI", "WebSocket"]
+    // },
     {
       image: "/assets/data-streaming-architecture.png",
       title: "Real-Time Data Pipeline",
