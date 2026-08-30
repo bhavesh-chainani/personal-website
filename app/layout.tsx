@@ -10,13 +10,13 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Bhavesh Chainani',
-  description: 'Data Scientist with 4+ years of professional experience in data science and analytics, adept at leveraging advanced analytical techniques and state-of-the-art technologies.',
-  keywords: 'Data Scientist, Tech Consultant, Python, Machine Learning, AWS, Data Analytics',
+  title: 'Bhavesh Chainani | Solutions Architect · Enterprise AI',
+  description: 'Customer-facing AI professional with 5+ years leading technical discovery, solution architecture, and delivery for enterprise clients across consulting, healthcare, and financial services. Open to Solutions Architect, Solutions Engineer, Forward Deployed Engineer, and GTM Engineer roles.',
+  keywords: 'Solutions Architect, Solutions Engineer, Forward Deployed Engineer, GTM Engineer, Pre-Sales Engineer, Enterprise AI, Technical Discovery, Azure, AWS, GenAI, RAG',
   authors: [{ name: 'Bhavesh Chainani' }],
   openGraph: {
-    title: 'Bhavesh Chainani - Data Scientist & Tech Consultant',
-    description: 'Data Scientist with 4+ years of professional experience in data science and analytics.',
+    title: 'Bhavesh Chainani | Solutions Architect · Enterprise AI',
+    description: 'Customer-facing AI professional with 5+ years leading technical discovery, solution architecture, and delivery for enterprise clients.',
     url: 'https://bhaveshc.com',
     siteName: 'Bhavesh Chainani Portfolio',
     type: 'website',

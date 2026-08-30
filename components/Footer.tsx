@@ -6,7 +6,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white py-4 border-t border-gray-800">
+    <footer className="relative bg-gray-900 dark:bg-black text-white py-6">
+      <div className="absolute top-0 left-0 right-0 h-px gradient-bg"></div>
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,11 +16,9 @@ const Footer = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div>
-            <p className="text-gray-400 font-semibold">
-              Copyright &copy; {currentYear} Bhavesh Chainani. All Rights Reserved.
-            </p>
-          </div>
+          <p className="text-gray-400 font-semibold text-sm">
+            Copyright &copy; {currentYear} Bhavesh Chainani. All Rights Reserved.
+          </p>
         </motion.div>
       </div>
     </footer>

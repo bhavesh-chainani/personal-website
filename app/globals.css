@@ -73,4 +73,46 @@
   .dark .skill-bracket {
     color: #9ca3af;
   }
+
+  .glass-card {
+    @apply bg-white/70 dark:bg-gray-900/50 backdrop-blur-xl border border-gray-200/70 dark:border-white/10;
+  }
+
+  .glass-nav {
+    @apply bg-white/80 dark:bg-gray-950/70 backdrop-blur-xl border border-gray-200/70 dark:border-white/10;
+  }
+
+  .glow-hover {
+    @apply transition-all duration-300;
+  }
+
+  .glow-hover:hover {
+    box-shadow: 0 0 0 1px rgba(12, 150, 241, 0.25), 0 20px 45px -15px rgba(12, 150, 241, 0.35);
+  }
+
+  .dark .glow-hover:hover {
+    box-shadow: 0 0 0 1px rgba(51, 194, 182, 0.3), 0 20px 45px -15px rgba(51, 194, 182, 0.4);
+  }
+
+  .bg-dot-grid {
+    background-image: radial-gradient(circle, rgba(120, 130, 150, 0.18) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+
+  .dark .bg-dot-grid {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  }
+
+  .fade-edges-x {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .ring-glow {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.9), 0 0 50px -5px rgba(12, 150, 241, 0.45);
+  }
+
+  .dark .ring-glow {
+    box-shadow: 0 0 0 4px rgba(17, 24, 39, 0.9), 0 0 60px -5px rgba(51, 194, 182, 0.4);
+  }
 }
