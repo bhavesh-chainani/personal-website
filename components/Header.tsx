@@ -20,9 +20,9 @@ const Header = () => {
 
   const navItems = [
     { href: '#about', label: 'About' },
-    { href: '#proficiencies', label: 'Proficiencies' },
+    { href: '#experience', label: 'Experience' },
+    { href: '#proficiencies', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
-    { href: '#other-platforms', label: 'Other Platforms' },
     { href: '#contact', label: 'Contact' },
   ]
 
@@ -35,22 +35,26 @@ const Header = () => {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled
-        ? 'bg-white/90 dark:bg-gray-950/90 backdrop-blur-md shadow-lg dark:shadow-gray-900/30'
-        : 'bg-transparent'
-    }`}>
-      <nav className="container-max">
-        <div className="flex items-center justify-between py-4 px-6">
-          <div className="flex items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
+      <nav
+        className={`container-max transition-all duration-300 rounded-2xl ${
+          isScrolled ? 'glass-nav shadow-lg dark:shadow-gray-950/50' : 'bg-transparent border border-transparent'
+        }`}
+      >
+        <div className="flex items-center justify-between py-3 px-5">
+          <button
+            onClick={() => handleNavClick('#profile')}
+            className="flex items-center"
+            aria-label="Scroll to top"
+          >
             <Image
               src="/assets/bhav-logo.png"
               alt="Bhavesh Chainani"
               width={80}
               height={80}
-              className="max-w-[50px] md:max-w-[70px] object-contain dark:invert"
+              className="max-w-[42px] md:max-w-[52px] object-contain dark:invert"
             />
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -59,7 +63,7 @@ const Header = () => {
                 <li key={item.href}>
                   <button
                     onClick={() => handleNavClick(item.href)}
-                    className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 font-bold text-[1.1rem] relative group"
+                    className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 font-semibold text-[0.95rem] relative group"
                   >
                     {item.label}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 gradient-bg transition-all duration-300 group-hover:w-full"></span>
@@ -107,7 +111,7 @@ const Header = () => {
         <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="px-6 py-4 bg-white/95 dark:bg-gray-950/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-800">
+          <div className="px-6 py-4 glass-nav rounded-b-2xl border-t-0">
             {navItems.map((item) => (
               <button
                 key={item.href}

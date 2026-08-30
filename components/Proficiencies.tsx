@@ -3,143 +3,130 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import Image from 'next/image'
+import { Compass, Sparkles, Cloud, Presentation, Users2, Code2 } from 'lucide-react'
+
+const rowOne = [
+  'Azure', 'AWS', 'GCP', 'Databricks', 'Generative AI', 'RAG',
+  'Recommender Systems', 'Computer Vision', 'NLP', 'PyTorch', 'TensorFlow', 'Scikit-Learn',
+]
+
+const rowTwo = [
+  'Python', 'PySpark', 'Java', 'JavaScript', 'SQL', 'NoSQL', 'REST APIs',
+  'Docker', 'Kubernetes', 'CI/CD', 'Technical Discovery', 'Solution Architecture',
+  'Stakeholder Communication', 'Cross-Functional Leadership',
+]
+
+const proficiencyCards = [
+  {
+    icon: Compass,
+    title: 'Solution Architecture & Discovery',
+    description: 'Running technical discovery across enterprise clients and translating business pain points into scalable architecture on Azure and AWS.',
+  },
+  {
+    icon: Sparkles,
+    title: 'GenAI & ML Engineering',
+    description: 'Building production GenAI systems — RAG, recommender systems, computer vision, and NLP — from prototype through to deployment.',
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud & Platform Engineering',
+    description: 'Designing and deploying on Azure, AWS, GCP, and Databricks, with containerized delivery via Docker and Kubernetes.',
+  },
+  {
+    icon: Presentation,
+    title: 'Client Workshops & Enablement',
+    description: 'Leading architecture workshops and technical demonstrations, translating business challenges into concrete, buildable use cases.',
+  },
+  {
+    icon: Users2,
+    title: 'Stakeholder & Team Leadership',
+    description: 'Aligning engineering, product, and commercial stakeholders around a shared roadmap across cross-functional teams.',
+  },
+  {
+    icon: Code2,
+    title: 'Full-Stack Delivery',
+    description: 'Shipping full-stack platforms end-to-end that embed AI directly into user workflows.',
+  },
+]
+
+const MarqueeRow = ({ items, reverse }: { items: string[]; reverse?: boolean }) => (
+  <div className="relative overflow-hidden fade-edges-x py-2">
+    <div className={`flex w-max gap-3 ${reverse ? 'animate-marquee-reverse' : 'animate-marquee'}`}>
+      {[...items, ...items].map((item, index) => (
+        <span
+          key={index}
+          className="flex-shrink-0 px-4 py-2 rounded-full glass-card text-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  </div>
+)
 
 const Proficiencies = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const skills = [
-    "Python (PyTorch, Keras, TensorFlow, Scikit-Learn, Django, Flask, PySpark)",
-    "MLOps (MLflow, DataRobot)",
-    "AWS (S3, Glue, SageMaker, QuickSight, Redshift, MWAA, Lambda, API Gateway)",
-    "Azure (Azure ML, Azure OpenAI, Cognitive Search, Blob Storage, App Services)",
-    "Databases & Data Platforms (MySQL, PostgreSQL, Hive, Elasticsearch, Teradata, Hadoop, MongoDB)",
-    "Data Visualization (Tableau, Power BI)",
-    "Containerization & Orchestration (Docker, Kubernetes)",
-    "Java",
-    "JavaScript (React, Node.js, Next.js)",
-    "REST APIs",
-    "R (RStudio)",
-    "MATLAB"
-  ]
-
-  const proficiencyCards = [
-    {
-      icon: "/assets/data-analysis.png",
-      title: "Data Analysis",
-      description: "Expert in diving deep into data to uncover trends, detect anomalies, and generate actionable insights that drive strategic decisions."
-    },
-    {
-      icon: "/assets/data-analytics.png",
-      title: "Data Science",
-      description: "Skilled in leveraging advanced analytics and machine learning to predict outcomes, optimize processes, and gain a competitive edge."
-    },
-    {
-      icon: "/assets/data-visualization.png",
-      title: "Data Visualization",
-      description: "Proficient in transforming complex data into clear, interactive visuals and dashboards for enhanced understanding and effective communication."
-    },
-    {
-      icon: "/assets/technical-writing.png",
-      title: "Technical Writing",
-      description: "Experienced in creating clear and precise documentation to ensure technical concepts and data projects are comprehensively understood."
-    },
-    {
-      icon: "/assets/front-end-web-development.png",
-      title: "Web Development",
-      description: "Skilled in designing and building intuitive web interfaces that effectively present data solutions, balancing functionality and aesthetics."
-    },
-    {
-      icon: "/assets/collaboration.png",
-      title: "Collaboration",
-      description: "Adept at working with teams to integrate data solutions into business processes, supporting both short-term projects and long-term goals."
-    }
-  ]
-
   return (
-    <section id="proficiencies" className="section-padding bg-white dark:bg-gray-950">
+    <section id="proficiencies" className="section-padding overflow-hidden">
       <div className="container-max">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-14"
         >
           <p className="text-lg font-semibold text-gray-600 dark:text-gray-400 mb-4">
             Here Are My
           </p>
-          
+
           <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 dark:text-white mb-12 relative inline-block">
             Proficiencies
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></div>
           </h2>
         </motion.div>
 
-        {/* Skills List */}
+        {/* Skill Marquee */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-16"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="space-y-3 mb-20 -mx-4 sm:-mx-6 lg:-mx-8"
         >
-          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 border border-gray-100 dark:border-gray-800">
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-              {skills.map((skill, index) => {
-                const bracketIndex = skill.indexOf('(');
-                const mainText = bracketIndex !== -1 ? skill.substring(0, bracketIndex).trim() : skill;
-                const bracketText = bracketIndex !== -1 ? skill.substring(bracketIndex) : '';
-                
-                return (
-                  <motion.li
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-                    transition={{ duration: 0.4, delay: 0.1 * index }}
-                    className="flex items-start space-x-3"
-                  >
-                    <div className="w-2 h-2 gradient-bg rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="leading-relaxed">
-                      <span className="skill-main" style={{ fontWeight: 700 }}>{mainText}</span>
-                      {bracketText && <><span className="skill-bracket" style={{ fontWeight: 450 }}> {bracketText}</span></>}
-                    </span>
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </div>
+          <MarqueeRow items={rowOne} />
+          <MarqueeRow items={rowTwo} reverse />
         </motion.div>
 
         {/* Proficiency Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {proficiencyCards.map((card, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 text-center card-hover border border-gray-100 dark:border-gray-800 flex flex-col h-full"
-            >
-              <div className="mb-6">
-                <Image
-                  src={card.icon}
-                  alt={`${card.title} Icon`}
-                  width={80}
-                  height={80}
-                  className="mx-auto w-20 h-20 object-contain"
-                />
-              </div>
-              
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
-                {card.title}
-              </h3>
-              
-              <p className="text-gray-500 dark:text-gray-400 leading-7 text-center flex-grow description-text" style={{ fontWeight: 450 }}>
-                {card.description}
-              </p>
-            </motion.div>
-          ))}
+          {proficiencyCards.map((card, index) => {
+            const Icon = card.icon
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.6, delay: 0.1 * index }}
+                className="glass-card glow-hover rounded-2xl p-8 text-center card-hover flex flex-col h-full"
+              >
+                <div className="mb-6 flex justify-center">
+                  <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center shadow-lg shadow-primary-500/20">
+                    <Icon className="w-7 h-7 text-white" />
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+                  {card.title}
+                </h3>
+
+                <p className="text-gray-500 dark:text-gray-400 leading-7 text-center flex-grow description-text" style={{ fontWeight: 450 }}>
+                  {card.description}
+                </p>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
